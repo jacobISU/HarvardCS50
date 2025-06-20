@@ -35,3 +35,16 @@ All programs have been refactored so they can be ran without the CS50 library.
   - Takes in user input. Specifically text from a book. (e.g. "One fish. Two fish. Red fish. Blue fish.")
   - Uses Coleman-Liau Index to evaluate the text by letters, words, and sentences to determine the text's intended grade level.
   - Used to learn string manipulation.
+
+**substitution.c**
+  - Takes in a 26 character, alphabetic, non-repeating characters input as a cipher key. (e.g. "NQXPOMAFTRHLZGECYJIUWSKDVB")
+  - Takes in user text and outputs the encrypted text. 
+  - Key is used as a new 26 character alphabet. 
+  - Finds each character's real alphabetic index, then replaces the text's character with the character from the key. 
+    (e.g. 'H' has an index 8 in the alphabet. Index 8 from the key is 'F'. Replace 'H' with 'F')
+  - Result will be a fully encrypted text (e.g. "plaintext: Hello" becomes "ciphertext: Folle)
+  - This assignment teaches user input from the command line, array manipulation, and more character manipulation.
+
+## Problem Set 3
+
+**TO/DO**
