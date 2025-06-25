@@ -1,0 +1,19 @@
+SORT
+
+No file included because of the nature of the assignment.
+
+Downloaded a file containing 
+	- 3 sorting algorithms with no identifiers.
+	- Text files of random, reversed, and sorted numbers of varying size.
+	- An answer.txt file with questions in it.
+
+Using a timer and the ability to sort the random, reversed, and sorted number files with one of the three algorithms at a time.
+
+I had to identify which sorting algorithm was a Selection Sort, Bubble Sort, and Merge Sort based on the time complexities of each.
+
+
+Selection Sort: Θ(n^2)
+Bubble Sort: O(n^2), Ω(n)
+Merge Sort: Θ(log n)
+
+
