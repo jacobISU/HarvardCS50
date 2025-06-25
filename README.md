@@ -47,4 +47,17 @@ All programs have been refactored so they can be ran without the CS50 library.
 
 ## Problem Set 3
 
+**sort.txt**
+  - No file included because of the nature of this assignment.
+  - Read text file for more information.
+  - This assignment was used to teach the time complexities of different sorting algorithms and how long they take based on best or worst case scenarios. 
+
+**plurality.c**
+  - This is a program that takes in a maximum of 9 candidates, the user then can vote for the candidates, and produce a winner(s).
+  - In the command line, run the program with 1 to 9 candidate names. (e.g. "./plurality Alice Bob Dan)
+  - Then enter the amount of voters you want voting for the candidates. These voters will be prompted for a name of a candidate they want to vote for.
+  - The winner(s) are printed out in the ended.
+  - The assignment teaches how structs are used and how the new type's data is manipulated.
+  - Also this is an excercise to use a sorting algorithm to help print the appropriate winners.
+
 **TO/DO**
