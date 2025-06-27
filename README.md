@@ -60,4 +60,15 @@ All programs have been refactored so they can be ran without the CS50 library.
   - The assignment teaches how structs are used and how the new type's data is manipulated.
   - Also this is an excercise to use a sorting algorithm to help print the appropriate winners.
 
-**TO/DO**
+  **tideman.c**
+  - This program implements the Tideman (Ranked Pairs) voting system.
+  - In command line, run the program with up to 1 to 9 candidates. (e.g. "./tideman Alice Bob Charlie)
+  - Then enter the amount of voters that are going to vote. (e.g. "Number of voters: 3")
+  - Then as the voter, vote for your candidates by rank. (e.g. "Rank 1: Alice, Rank 2: Bob, Rank 3: Charlie")
+  - Accepts ranked votes to determine a winner by sorting pairs of candidates by "strength of victory".
+  - A pair is locked into a directed graph if the pair(edge) does not create a cycle in the graph.
+  - This assignment teaches 2D arrays, graph theory and cycle detection, More sorting algorithms.
+  - Difficult.
+
+  ## Problem Set 4
+
