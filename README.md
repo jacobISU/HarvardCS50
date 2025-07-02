@@ -72,3 +72,9 @@ All programs have been refactored so they can be ran without the CS50 library.
 
   ## Problem Set 4
 
+  **volume.c**
+  - This program manipulates a .WAV file.
+  - Reads in and copies the .WAV header file and writes it to a new output file.
+  - Reads in the samples of the .WAV file, manipulates the sample, then writes the manipulated samples to the same new output file.
+  - This assignment is an introduction to syntax regarding memory in C and Binary File I/O as well as Low-level data types like uint8_t.
+
