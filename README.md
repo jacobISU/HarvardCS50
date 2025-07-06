@@ -9,19 +9,22 @@ All programs have been refactored so they can be ran without the CS50 library.
   - Used to explain the logic of programming in a visual way.
 ## Problem Set 1
 
-**hello.c**  
+**me**
+**Folder Contents: hello.c**  
 **To build with VSCode, Powershell, and gcc: gcc hello.c -o hello**  
 **To run: "./hello"**
   - Super simple program that takes in the user's name and says hello to the name input.
   - Used to show how to get user input.
     
-**mario.c**  
+**mario**  
+**Folder Contents: mario.c**  
 **To build with VSCode, Powershell, and gcc: gcc mario.c -o mario**  
 **To run: "./mario"**
   - Takes a user input from 1 to 8 and then "draws" a mario block pyramid of the user input height in the terminal.
   - Used to learn how to use for and while loops.
     
-**credit.c**  
+**credit**  
+**Folder Contents: credit.c**  
 **To build with VSCode, Powershell, and gcc: gcc credit.c -o credit**  
 **To run: "./credit"**
   - Takes a user's credit card number as input.
@@ -32,21 +35,24 @@ All programs have been refactored so they can be ran without the CS50 library.
 
 ## Problem Set 2
 
-**scrabble.c**  
+**scrabble**  
+**Folder Contents: scrabble.c**  
 **To build with VSCode, Powershell, and gcc: gcc scrabble.c -o scrabble**  
 **To run: "./scrabble"**
   - Takes in a word for a "Player 1" and "Player 2".
   - Uses scrabble rules to assign individual alphabetic characters values. Whichever player enters the most valuable word wins.
   - Used to learn how to manipulate and use individual characters.
 
-**readability.c**  
+**readability**  
+**Folder Contents: readability.c**  
 **To build with VSCode, Powershell, and gcc: gcc readability.c -o readability**  
 **To run: "./readability"**
   - Takes in user input. Specifically text from a book. (e.g. "One fish. Two fish. Red fish. Blue fish.")
   - Uses Coleman-Liau Index to evaluate the text by letters, words, and sentences to determine the text's intended grade level.
   - Used to learn string manipulation.
 
-**substitution.c**  
+**substitution**  
+**Folder Contents: substitution.c**  
 **To build with VSCode, Powershell, and gcc: gcc substitution.c -o substitution**  
   - Takes in a 26 character, alphabetic, non-repeating characters input as a cipher key. (e.g. "./substitution NQXPOMAFTRHLZGECYJIUWSKDVB")
   - Takes in user text and outputs the encrypted text. 
@@ -62,7 +68,7 @@ All programs have been refactored so they can be ran without the CS50 library.
   - Read text file for more information.
   - This assignment was used to teach the time complexities of different sorting algorithms and how long they take based on best or worst case scenarios. 
 
-**plurality.c**  
+**plurality**  
 **Folder Contents: plurality.c**  
 **To build with VSCode, Powershell, and gcc: gcc plurality.c -o plurality**
   - This is a program that takes in a maximum of 9 candidates, the user then can vote for the candidates, and produce a winner(s).
@@ -72,11 +78,11 @@ All programs have been refactored so they can be ran without the CS50 library.
   - The assignment teaches how structs are used and how the new type's data is manipulated.
   - Also this is an excercise to use a sorting algorithm to help print the appropriate winners.
 
-  **tideman.c**  
+  **tideman**  
   **Folder Contents: tideman.c**  
   **To build with VSCode, Powershell, and gcc: gcc tideman.c -o tideman**
   - This program implements the Tideman (Ranked Pairs) voting system.
-  - In command line, run the program with up to 1 to 9 candidates. (e.g. "./tideman Alice Bob Charlie)
+  - In command line, run the program with up to 1 to 9 candidates. (e.g. "./tideman Alice Bob Charlie")
   - Then enter the amount of voters that are going to vote. (e.g. "Number of voters: 3")
   - Then as the voter, vote for your candidates by rank. (e.g. "Rank 1: Alice, Rank 2: Bob, Rank 3: Charlie")
   - Accepts ranked votes to determine a winner by sorting pairs of candidates by "strength of victory".
@@ -86,7 +92,7 @@ All programs have been refactored so they can be ran without the CS50 library.
 
   ## Problem Set 4
 
-  **volume.c**  
+  **volume**  
   **Folder Contents: input.wav, output.wav, volume.c**  
   **To build with VSCode, Powershell, and gcc: gcc volume.c -o volume**
   - This program manipulates a .WAV file.
@@ -98,7 +104,7 @@ All programs have been refactored so they can be ran without the CS50 library.
   **Folder Contents: images(courtyard.bmp, stadium.bmp, tower.bmp, yard.bmp), bmp.h, filter.c, helper.c, helpers.h**  
   **To build with VSCode, Powershell, and gcc: gcc -o filter filter.c helpers.c -lm**
   - This program takes a .BMP image and manipulates the pixels to make a new image with grayscale(-g), reflection(-r), blur(-b), and edge detection(-e).
-  - In command line, run the program with ./filter flag image output. (e.g. ./filter -g images/yard.bmp out.bmp)
+  - In command line, run the program with ./filter flag image output. (e.g. "./filter -g images/yard.bmp out.bmp")
   - Based on flag, manipulates pixels accordingly.
     - Greyscale - averages the RGB values then redistributes them to the same pixel.
     - Reflection - Swaps the first and last pixel until the image is swapped.
@@ -110,4 +116,17 @@ All programs have been refactored so they can be ran without the CS50 library.
       - Then finally, sets that color value to that result.
   - This assignment teaches 2D array manipulation in the form of an image, pixel manipulation using a box blur algorithm and Sobel filter algorithm.
   - Also teaches the idea behind memory, reading in files, writing files, and different structs integrating with the Main file(filter.c).  
+
+  **recover**  
+  **Folder Contents: recover.c, card.raw**  
+  **To build with VSCode, Powershell, and gcc: gcc -o recover recover.c**
+  > **Note:** Will output 50 .jpg files when ran with the card.raw from CS50.
+  - This program takes in a .raw file and forensically recovers all .jpg files in the unprocessed data.
+  - In command line, run the program with ./recover file.raw (e.g. "./recover card.raw")
+  - The program will iterate through every byte of data until the first four bytes are 0xff, 0xd8, 0xff, and (0xe0 to 0xef).
+  - This indicates a .jpg file and will start to write to an out put file.
+  - Every .jpg output file is named from 0 to 999. (e.g. card.raw has 50 .jpg files so 000.jpg is the first and 049.jpg is the last)
+  - This assignment teaches typedef aliases like "uint8_t" from the "stdint.h" library. Open, Read, Write binary files in C (file I/O functions).
+  - Also teaches low-level file analysis and recovery such as identifying file format such as a .jpg file with its signiture.      
+
 
