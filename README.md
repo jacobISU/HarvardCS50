@@ -129,4 +129,12 @@ All programs have been refactored so they can be ran without the CS50 library.
   - This assignment teaches typedef aliases like "uint8_t" from the "stdint.h" library. Open, Read, Write binary files in C (file I/O functions).
   - Also teaches low-level file analysis and recovery such as identifying file format such as a .jpg file with its signiture.      
 
+**inheritance**
+**Folder Contents: inheritance.c**
+**To build with VSCode, Powershell, and gcc: gcc -o inheritance inheritance.c**
+- This program creates a virtual family tree based on blood types and reveals each generations blood types according to their parents.
+- Such as a child could have a blood type of 'AB' which would mean one parent could have 'AA' while the other has 'BB'.
+- No command line or user inputs.
+- This assignment teaches how you can use memory dynamically to create data structures.
+- Easy due to comments. 
 
