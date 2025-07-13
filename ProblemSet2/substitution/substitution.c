@@ -94,8 +94,6 @@ int validate_argument(int argc, char* argv[])
             return 3;
         }
 
-        int unique_char_length = strlen(unique_chars);
-
         for (int j = 0; j < empty_index; j++)
         {
             if (argv[1][i] == toupper(unique_chars[j]) || argv[1][i] == tolower(unique_chars[j]))
