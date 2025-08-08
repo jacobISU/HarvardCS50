@@ -21,12 +21,17 @@ With this setup, you can simply download the project folder, navigate to the des
 - Ctrl+Shift+P and select "WSL: Open Folder in WSL..."
 - Select your project folder.
 
-## Run a Project  
+## Run a Project in C  
 **Example: mario**  
 - "cd ProblemSet1/mario-more"
 - "make mario"
 - "./mario"
 - "make clean" # (optional) cleans build artifacts
+
+## Run a Project in Python  
+**Example: mario**  
+- "cd ProblemSet6/sentimental-mario-more"
+- "python3 mario.py"
 
 # Problem Set Overviews  
 
@@ -160,5 +165,28 @@ With this setup, you can simply download the project folder, navigate to the des
   - Then, it reads in the text file and hashes each word, if the word matches the dictionaries word in the hash table, then the word is correct.
   - The output of the program prints the stats to terminal.
   - This assignment teaches you real world implimintations of memory management, data structures, and navigating multiple files. 
+
+ ## Problem Set 6: Python
+
+ **sentimental-hello**  
+ **Folder Contents: hello.py**  
+ - Recreation of hello.c from Problem Set 1 but in Python.
+ - Teaches syntax of Python.
+
+ **sentimental-mario-more**  
+ **Folder Contents: mario.py**  
+ - Recreation of more difficult mario.c from Problem Set 1 but in Python.
+ - Teaches syntax in Python.
+
+ **sentimental-credit**  
+ **Folder Contents: credit.py**  
+ - Recreation of credit.c from Problem Set 1 but in Python.
+ - Teaches syntax in Python.
+
+ **sentimental-readability**  
+ **Folder Contents: readability.py**  
+ - Recreation of readability.c from Problem Set 2 but in Python.
+ - Teaches syntax in Python.
+
 
 
