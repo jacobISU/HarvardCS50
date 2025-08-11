@@ -188,5 +188,14 @@ With this setup, you can simply download the project folder, navigate to the des
  - Recreation of readability.c from Problem Set 2 but in Python.
  - Teaches syntax in Python.
 
+ **dna**  
+ **Folder Contents: databases(large.csv, small.csv), sequences(1.txt - 20.txt), dna.py**  
+ - This program checks a dna database with a dna sample and outputs the name of the person with the matching dna. 
+ - It takes in two command-line arguments, the first being a '.csv' file and the second being a '.txt' file. (e.g. "python3 dna.py databases/ large.csv sequences/14.txt")
+ - The program will read in the database from the csv file and the dna sequence from the text file.
+ - Using the course given longest_match function, you run the dna sequence and save the results.
+ - Lastly, the results are compared with the database and if there is a match then the name of the person is output to terminal.
+ - This assignment is a more advanced way of teaching Python syntax over topics we have already learned previously such as dictionaries. 
+
 
 
