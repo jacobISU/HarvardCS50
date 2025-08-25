@@ -1,0 +1,45 @@
+In 1.sql, write a SQL query to list the names of all songs in the database.
+Your query should output a table with a single column for the name of each song.
+In 2.sql, write a SQL query to list the names of all songs in increasing order of tempo.
+Your query should output a table with a single column for the name of each song.
+In 3.sql, write a SQL query to list the names of the top 5 longest songs, in descending order of length.
+Your query should output a table with a single column for the name of each song.
+In 4.sql, write a SQL query that lists the names of any songs that have danceability, energy, and valence greater than 0.75.
+Your query should output a table with a single column for the name of each song.
+In 5.sql, write a SQL query that returns the average energy of all the songs.
+Your query should output a table with a single column and a single row containing the average energy.
+In 6.sql, write a SQL query that lists the names of songs that are by Post Malone.
+Your query should output a table with a single column for the name of each song.
+You should not make any assumptions about what Post Malone’s artist_id is.
+In 7.sql, write a SQL query that returns the average energy of songs that are by Drake.
+Your query should output a table with a single column and a single row containing the average energy.
+You should not make any assumptions about what Drake’s artist_id is.
+In 8.sql, write a SQL query that lists the names of the songs that feature other artists.
+Songs that feature other artists will include “feat.” in the name of the song.
+Your query should output a table with a single column for the name of each song.
+
+1. SELECT name FROM songs;
+2. SELECT name FROM songs ORDER BY tempo;
+3. SELECT name FROM songs ORDER BY duration_ms DESC LIMIT 5;
+4. SELECT name FROM songs WHERE danceability > 0.75 AND energy > 0.75 AND valence > 0.75 ;
+5. SELECT AVG(energy) FROM songs;
+6. SELECT name FROM songs WHERE artist_id = (SELECT id FROM artists WHERE name = 'Post Malone');
+7. SELECT AVG(energy) FROM songs WHERE artist_id = (SELECT id FROM artists WHERE name = 'Drake');
+8. SELECT name FROM songs WHERE name LIKE '%feat.%';
+
+Spotify Wrapped is a feature presenting Spotify users’ 100 most played songs from the past year. In 2021, Spotify Wrapped calculated an 
+“Audio Aura” for each user, a “reading of [their] two most prominent moods as dictated by [their] top songs and artists of the year.” 
+Suppose Spotify determines an audio aura by looking at the average energy, valence, and danceability of a person’s top 100 songs from 
+the past year. In answers.txt, reflect on the following questions:
+If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. 
+What better ways of calculating this aura would you propose? Respond in answers.txt.
+
+answers.txt:
+I would characterize the audio aura using the average energy, valence, and danceability as a reflection of the style of music they like rather than their mood.
+If all of these arguments are high then it can be assumed the listener likes faster paced music which tends to be more energetic and fun. If they are low, then it can
+be assumed that it is slower and calmer, maybe the person likes lofi to study or more emotional music.
+I don't feel like this calculation of aura is a good way to represent the listener because if the arguments are reading into the average range then it
+doesn't offer very much information and might suggest the wrong style of music to the listener based on more or less a "beats per minute".
+I think adding a genre column that could store multiple genres of a single song and then using queries on the top 100 songs to GROUP BY or LIKE to combine
+most use genres or like genres then pull songs with the similiar genres to recommend to the listener. 
