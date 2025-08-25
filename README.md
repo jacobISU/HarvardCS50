@@ -197,5 +197,10 @@ With this setup, you can simply download the project folder, navigate to the des
  - Lastly, the results are compared with the database and if there is a match then the name of the person is output to terminal.
  - This assignment is a more advanced way of teaching Python syntax over topics we have already learned previously such as dictionaries. 
 
+ ## Problem Set 7: SQL (Structured Query Language)
 
+ **songs**  
+ **Folder Contents: songs.txt**  
+ - This assignment teaches you basic commands in SQL and accessing a database using sqlite3 in the terminal.
+  > **Note:** Due to the nature of the assignment, I felt a text file would suffice for easier readability. 
 
