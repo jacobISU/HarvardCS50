@@ -203,4 +203,9 @@ With this setup, you can simply download the project folder, navigate to the des
  **Folder Contents: songs.txt**  
  - This assignment teaches you basic commands in SQL and accessing a database using sqlite3 in the terminal.
   > **Note:** Due to the nature of the assignment, I felt a text file would suffice for easier readability. 
+ 
+ **movies**  
+ **Folder Contents: movies.txt**  
+ - This assignment teaches you advanced commands in SQL and accessing a database using sqlite3 in the terminal.
+  > **Note:** Due to the nature of the assignment, I felt a text file would suffice for easier readability. 
 
